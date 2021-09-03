@@ -3,6 +3,7 @@ package com.ujiuye.entity;
 public class Student {
     private int sid;
     private String sname;
+    private int age;
 
     public Student() {
     }
@@ -10,6 +11,12 @@ public class Student {
     public Student(int sid, String sname) {
         this.sid = sid;
         this.sname = sname;
+    }
+
+    public Student(int sid, String sname, int age) {
+        this.sid = sid;
+        this.sname = sname;
+        this.age = age;
     }
 
     public int getSid() {
@@ -26,5 +33,13 @@ public class Student {
 
     public void setSname(String sname) {
         this.sname = sname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
